@@ -34,3 +34,4 @@ Developed on VS 2022:
 1. Git Clone this project;
 2. Open the solution `ArithmeticAPI.sln` file on VS 2022;
 3. Start Debug - Debug > Start Debugging;
+4. The development execution supports [OpenAPI/Swagger](https://swagger.io/docs/specification/about/)
