@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticAPI", "ArithmeticAPI.csproj", "{577C0974-D1EC-417A-8BC1-43D14C4857C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArithmeticAPI", ".\ArithmeticAPI\ArithmeticAPI.csproj", "{577C0974-D1EC-417A-8BC1-43D14C4857C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArithmeticAPI", "..\TestArithmeticAPI\TestArithmeticAPI.csproj", "{650FFFA8-415F-477F-9480-9D7FC810B902}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArithmeticAPI", ".\TestArithmeticAPI\TestArithmeticAPI.csproj", "{650FFFA8-415F-477F-9480-9D7FC810B902}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
