@@ -15,6 +15,11 @@ namespace ArithmeticAPI.Controllers
             sumService = new SumService();
         }
 
+        /// <summary>
+        /// Return the sum of all the elements of an array.
+        /// </summary>
+        /// <param name="values">Array of integer numbers, separated by commas. Include only positive numbers.</param>
+        /// <returns>The sum of all the values of the array passed.</returns>
         [HttpPost("/addition")]
         public int Addition(int[] values)
         {
@@ -22,6 +27,11 @@ namespace ArithmeticAPI.Controllers
             return usecase.Add(values);
         }
 
+        /// <summary>
+        /// Return the sum of all the elements of an array. 
+        /// </summary>
+        /// <param name="values">Array of integer numbers, separated by commas. Include minus signal to subtract elemets from the final sum.</param>
+        /// <returns>The sum of all the values of the array passed.</returns>
         [HttpPost("/subtraction")]
         public int Subtraction(int[] values)
         {
