@@ -6,6 +6,29 @@
 >
 > The submission should be a git repository containing the solution written in C#.
 
+The solution `sln` contains two projects:
+1. Arithmetic API Project - Web API;
+2. Arithmetic API Test Project - Unit Tests;
+
+
+## Arithmetic API Project
+Project contains the ASP.NET Core web API.
+Structured in three layers:
+1. Controllers - presentation layer;
+2. UseCases - contains core business case rules (use cases) for the solution;
+3. Services - contains services shared among other layers;
+
+## Arithmetic API Test Project
+Project contains unit tests for Arithmetic API Project. 
+- The objective is to get feedback from implemented code as fast as possible;
+- Unit tests written on TDD aproach (Red, Green, Refactor);
+    - to focus on code design (and refactoring) more than code coverage;
+- Should cover all significant code for the solution - mostly targeting use cases.
+- Test structure:
+    - Test Classes - targeting a specific class on the main project (Arithmetic API Project);
+    - Test Methods - test cases using BDD (Given, When, Then) notation;
+        - AAA (Arrange, Act, Assert) internal structure on each test case;
+
 ## Local environment
 Developed on VS 2022:
 1. Git Clone this project;
