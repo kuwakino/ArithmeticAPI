@@ -6,7 +6,7 @@
 >
 > The submission should be a git repository containing the solution written in C#.
 
-The solution `sln` contains two projects:
+The solution `ArithmeticAPI.sln` contains two projects:
 1. Arithmetic API Project - Web API;
 2. Arithmetic API Test Project - Unit Tests;
 
@@ -23,10 +23,10 @@ Project contains unit tests for Arithmetic API Project.
 - The objective is to get feedback from implemented code as fast as possible;
 - Unit tests written on TDD aproach (Red, Green, Refactor);
     - to focus on code design (and refactoring) more than code coverage;
-- Should cover all significant code for the solution - mostly targeting use cases.
+- Should cover all significant code for the solution - mostly use cases.
 - Test structure:
     - Test Classes - targeting a specific class on the main project (Arithmetic API Project);
-    - Test Methods - test cases using BDD (Given, When, Then) notation;
+    - Test Methods - test cases named on BDD (Given, When, Then) notation;
         - AAA (Arrange, Act, Assert) internal structure on each test case;
 
 ## Local environment
