@@ -10,20 +10,20 @@ using System.Threading.Tasks;
 namespace TestArithmeticAPI
 {
     [TestClass]
-    public class SubtractionUseCaseTest
+    public class SumUseCaseTest
     {
         [TestMethod]
-        public void GIVEN_an_array_of_integer_numbers_WHEN_add_is_called_THEN_should_return_the_addition()
+        public void GIVEN_an_array_of_integer_numbers_WHEN_sum_is_called_THEN_should_return_the_sum_of_the_values()
         {
             //arrange
             ISumService sumService = new SumService();
-            SubtractionUseCase useCase = new SubtractionUseCase(sumService);
+            SumUseCase useCase = new SumUseCase(sumService);
 
             int[] givenParams = { 1, 2, 3, -4 };
             int expectedAddition = 2;
 
             //act
-            int actualAddition = useCase.Subtract(givenParams);
+            int actualAddition = useCase.Sum(givenParams);
 
             //assert
             Assert.AreEqual(expectedAddition, actualAddition);

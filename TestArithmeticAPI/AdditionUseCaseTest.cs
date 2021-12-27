@@ -9,7 +9,7 @@ namespace TestArithmeticAPI
     public class AdditionUseCaseTest
     {
         [TestMethod]
-        public void GIVEN_an_array_of_integer_postive_numbers_WHEN_add_is_called_THEN_should_return_the_addition()
+        public void GIVEN_an_array_of_integer_postive_numbers_WHEN_add_is_called_THEN_should_return_the_sum_of_the_values()
         {
             //arrange
             var sumService = new SumServiceSpy();

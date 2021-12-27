@@ -32,11 +32,11 @@ namespace ArithmeticAPI.Controllers
         /// </summary>
         /// <param name="values">Array of integer numbers, separated by commas. Include minus signal to subtract elemets from the final sum.</param>
         /// <returns>The sum of all the values of the array passed.</returns>
-        [HttpPost("/subtraction")]
-        public int Subtraction(int[] values)
+        [HttpPost("/sum")]
+        public int Sum(int[] values)
         {
-            var usecase = new SubtractionUseCase(sumService);
-            return usecase.Subtract(values);
+            var usecase = new SumUseCase(sumService);
+            return usecase.Sum(values);
         }
     }
 }
