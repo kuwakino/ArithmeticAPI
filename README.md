@@ -16,7 +16,7 @@ The solution `ArithmeticAPI.sln` contains two projects:
 Project contains the ASP.NET Core web API.
 Structured in three layers:
 1. Controllers - presentation layer;
-2. UseCases - contains core business rules (use cases) for the solution;
+2. UseCases - core business rules (use cases) for the solution;
 3. Services - contains services shared among other layers;
 
 ## Arithmetic API Test Project

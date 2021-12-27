@@ -16,7 +16,7 @@ namespace ArithmeticAPI.Controllers
         }
 
         /// <summary>
-        /// Return the sum of all the elements of an array.
+        /// Return the sum of all the elements of an array - positive numbers only.
         /// </summary>
         /// <param name="values">Array of integer numbers, separated by commas. Include only positive numbers.</param>
         /// <returns>The sum of all the values of the array passed.</returns>
@@ -28,7 +28,7 @@ namespace ArithmeticAPI.Controllers
         }
 
         /// <summary>
-        /// Return the sum of all the elements of an array. 
+        /// Return the sum of all the elements of an array - including negative numbers. 
         /// </summary>
         /// <param name="values">Array of integer numbers, separated by commas. Include minus signal to subtract elemets from the final sum.</param>
         /// <returns>The sum of all the values of the array passed.</returns>
