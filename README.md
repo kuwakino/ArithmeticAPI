@@ -11,13 +11,17 @@ The solution `ArithmeticAPI.sln` contains two projects:
 1. Arithmetic API Project - Web API;
 2. Arithmetic API Test Project - Unit Tests;
 
-
 ## Arithmetic API Project
 Project contains the ASP.NET Core web API.
 Structured in three layers:
 1. Controllers - presentation layer;
 2. Core - core business rules (use cases) for the solution;
 3. Services - contains services shared among other layers;
+
+### Other Design Decisions
+1. Opted for the sum of elements in an array to not limit on only two values;
+2. Included validation for addition: _"refuse to operate on negative numbers"_ on the use case layer assuming it as a business rule;
+3. Second end-point named `/operations/sum` to make it more explicit than `/oprations/subtraction`;
 
 ## Arithmetic API Test Project
 Project contains unit tests for Arithmetic API Project. 
