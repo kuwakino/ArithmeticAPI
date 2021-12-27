@@ -1,13 +1,8 @@
 ﻿using ArithmeticAPI.Services;
 using ArithmeticAPI.UseCases;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TestArithmeticAPI
+namespace TestArithmeticAPI.Core
 {
     [TestClass]
     public class SumUseCaseTest

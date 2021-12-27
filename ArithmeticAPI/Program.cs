@@ -9,7 +9,8 @@ builder.Services.AddEndpointsApiExplorer();
 
 //Swagger configs
 builder.Services.AddSwaggerGen();
-builder.Services.ConfigureSwaggerGen(options => {
+builder.Services.ConfigureSwaggerGen(options =>
+{
     var basePath = PlatformServices.Default.Application.ApplicationBasePath;
     options.IncludeXmlComments(basePath + "\\ArithmeticAPI.xml");
 });

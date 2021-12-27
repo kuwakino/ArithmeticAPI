@@ -1,7 +1,7 @@
 ﻿using ArithmeticAPI.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestArithmeticAPI
+namespace TestArithmeticAPI.Services
 {
     [TestClass]
     public class SumServiceTest

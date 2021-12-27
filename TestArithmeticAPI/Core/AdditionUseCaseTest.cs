@@ -3,7 +3,7 @@ using ArithmeticAPI.UseCases;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace TestArithmeticAPI
+namespace TestArithmeticAPI.Core
 {
     [TestClass]
     public class AdditionUseCaseTest
@@ -27,7 +27,7 @@ namespace TestArithmeticAPI
         }
 
         [TestMethod]
-        public void GIVEN_an_array_of_integer_postive_AND_negative_numbers_WHEN_add_is_called_THEN_should_return_an_error()
+        public void GIVEN_an_array_of_integer_positive_AND_negative_numbers_WHEN_add_is_called_THEN_should_return_an_error()
         {
             //arrange
             var sumService = new SumService();
@@ -41,11 +41,12 @@ namespace TestArithmeticAPI
             try
             {
                 int actualAddition = useCase.Add(givenParams);
-            } catch (Exception err)
+            }
+            catch (Exception err)
             {
                 actualError = err.Message;
             }
-            
+
             //assert
             Assert.AreEqual(expectedError, actualError);
         }
